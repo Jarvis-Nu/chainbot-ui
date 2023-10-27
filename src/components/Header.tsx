@@ -8,6 +8,8 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import chainBotLogo from '@/images/chainbot-logo.png'
+import Image from 'next/image'
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -57,7 +59,13 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              {/* <Logo className="h-10 w-auto" /> */}
+              <Image
+                src={chainBotLogo}
+                alt='Chainbot Logo'
+                width={70}
+                height={70}
+              />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -127,11 +135,11 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" variant="outline" className="hidden lg:block">
+            <Button href="#" variant="outline" className="hidden lg:block">
               Log in
             </Button>
             <Button href="#" className="hidden lg:block">
-              Download
+              Add to Discord
             </Button>
           </div>
         </Container>

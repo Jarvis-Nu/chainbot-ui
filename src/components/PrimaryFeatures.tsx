@@ -37,23 +37,23 @@ interface CustomAnimationProps {
 
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'Stay On Top of On-Chain Activity',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      'Our discord bot keeps you informed of important on-chain transactions in real-time. With customizable alerts and notifications, you will never miss critical blockchain activity again.',
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'Customize Your Alerts',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+      'Tailor alerts to your specific needs. Only get notified for transactions that matter to you, like large transfers or activity from specific addresses.',
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
-    name: 'Invest what you want',
+    name: 'Seamless Discord Integration',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+      'Our bot lives right in your Discord server for easy access. Get alerts right alongside the conversations happening in your crypto community.',
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },

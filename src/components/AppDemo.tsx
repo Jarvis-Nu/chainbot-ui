@@ -177,9 +177,9 @@ export function AppDemo() {
         <div className="p-4">
           <div className="flex gap-2">
             <div className="text-xs leading-6 text-gray-500">
-              Tailwind Labs, Inc.
+              Powered by <span className='font-medium text-black'>Chainbase</span>
             </div>
-            <div className="text-sm text-gray-900">$CSS</div>
+            <div className="text-sm text-gray-900">CODE/USD</div>
             <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none">
               <path
                 d="M5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0ZM12 9v6M15 12H9"
@@ -192,9 +192,7 @@ export function AppDemo() {
           </div>
           <div className="mt-3 border-t border-gray-200 pt-5">
             <div className="flex items-baseline gap-2">
-              <div className="text-2xl tabular-nums tracking-tight text-gray-900">
-                {activeValue.toFixed(2)}
-              </div>
+              <div className="text-2xl tabular-nums tracking-tight text-gray-900">0.144</div>
               <div className="text-sm text-gray-900">USD</div>
               {percentageChange && (
                 <div
@@ -202,11 +200,7 @@ export function AppDemo() {
                     'ml-auto text-sm tabular-nums tracking-tight',
                     percentageChange >= 0 ? 'text-cyan-500' : 'text-gray-500',
                   )}
-                >
-                  {`${
-                    percentageChange >= 0 ? '+' : ''
-                  }${percentageChange.toFixed(2)}%`}
-                </div>
+                >+5%</div>
               )}
             </div>
             <div className="mt-6 flex gap-4 text-xs text-gray-500">

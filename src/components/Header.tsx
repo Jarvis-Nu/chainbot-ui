@@ -10,6 +10,7 @@ import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import chainBotLogo from '@/images/chainbot-logo.png'
 import Image from 'next/image'
+import { DynamicConnectButton, DynamicWidget } from '@dynamic-labs/sdk-react-core'
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -135,11 +136,12 @@ export function Header() {
                 </>
               )}
             </Popover>
+            {/* <DynamicWidget />
             <Button href="#" variant="outline" className="hidden lg:block">
               Log in
-            </Button>
-            <Button href="#" className="hidden lg:block">
-              Add to Discord
+            </Button> */}
+            <Button href="https://discord.com/oauth2/authorize?client_id=1165831512281849876&permissions=8&scope=bot%20applications.commands" className="hidden hover:bg-white hover:text-black lg:block hover:border hover:border-black">
+              Add bot to Discord
             </Button>
           </div>
         </Container>
